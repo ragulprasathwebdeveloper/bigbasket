@@ -1,0 +1,1672 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        main img {
+            width: 100%;
+            height: 320px;
+        }
+
+        #shadow {
+            border-bottom: 1px solid black;
+            border-top: 5px solid green;
+            box-shadow: 0px 2px 2px rgb(98, 98, 98);
+        }
+
+        #search {
+            width: 58%;
+        }
+
+        #banner {
+            border-radius: 20%;
+        }
+
+        #hovernav {
+            color: green;
+            text-decoration: none;
+            position: relative;
+            /* transition: color 0.3s; */
+            /* transition: 1.1s; */
+        }
+
+        #hovernav:hover {
+            text-decoration: underline;
+            /* transform-origin: left; */
+            /* bottom: 5px; */
+        }
+
+        #button:hover {
+            transform: scale(1.1);
+        }
+
+        #scroll {
+            overflow-y: scroll;
+            /* border: 1px solid black; */
+            height: 800px;
+            width: 25%;
+
+        }
+
+        #scroll2 {
+            overflow-y: scroll;
+            height: 800px;
+            width: 75%;
+        }
+
+        /* .imgs{
+    margin-left: 6%;
+    padding-left: 5%;
+} */
+
+        .imggap {
+            padding-left: 2%;
+        }
+
+        #hoverselect:hover {
+            background-color: rgb(110, 108, 108);
+        }
+
+    
+        /* .navbar-brand {
+            font-size: 1;
+        } */
+
+        .navbar-toggler {
+            border: none;
+            height: 2%;
+        }
+
+        @media(max-width: 991px) {
+            .sidebar {
+                background-color: rgba(244, 228, 228, 0.15);
+                backdrop-filter: blur(10px);
+            }
+        }
+
+        .imggap {
+            margin-bottom: 15px;
+        }
+
+        .card {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 10px;
+        }
+
+        .footer .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .footer-col {
+            flex: 1;
+            padding: 10px;
+            min-width: 150px;
+        }
+
+        .footer h4 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 8px;
+        }
+
+        .footer-col ul li a {
+            text-decoration: none;
+            color: #bbb;
+            font-size: 13px;
+            position: relative;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .footer-col ul li a::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #f7f3f3;
+            transform-origin: bottom right;
+            transition: transform 0.3s ease-out;
+        }
+
+        .footer-col ul li a:hover {
+            color: #fff;
+        }
+
+        .footer-col ul li a:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin-right: 8px;
+            width: 35px;
+            height: 35px;
+            background-color: #333;
+            text-align: center;
+            line-height: 35px;
+            border-radius: 50%;
+            color: #fff;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: #555;
+            transform: rotate(360deg);
+        }
+
+        .btn-danger {
+            transition: background-color 0.3s, box-shadow 0.3s;
+        }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            border-color: #bd2130;
+            box-shadow: 0 4px 10px rgba(200, 35, 51, 0.5);
+        }
+
+        /* @media (max-width: 768px) {
+            .footer-col {
+                flex: 1 1 100%;
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="border-top: 4px solid green;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/bigbasketlogoorignal.jpeg" alt=""
+                    style=" height: 36px;"></a>
+            <!-- toggler Button -->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Sidebar -->
+            <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <!-- Sidebar Header -->
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Welcome To Big Basket</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- Sidebar Body -->
+                <div class="offcanvas-body">
+                    <form class="input-group my-2 my-lg-0 w-75" id="search">
+                        <input class="form-control" style="border: 1px solid green;height: 36px;" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+                    <ul class="navbar-nav justify-content-end pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Cart</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle bg-success col-md-12 col-6" style="border-radius: 10px; height: 36px;"
+                                href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Select By Category
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start bg-dark">
+                                <li><a class="dropdown-item text-white" href="#item1" id="hoverselect">Fruits</a></li>
+                                <li><a class="dropdown-item text-white" href="#item2" id="hoverselect">Vegetables</a>
+                                </li>
+                                <li><a class="dropdown-item text-white" href="#item3" id="hoverselect">Bakery, Cakes &
+                                        Dairy</a>
+                                </li>
+                                <!-- <li><a class="dropdown-item text-white" href="#item4" id="hoverselect">Beauty &
+                                        Hygiene</a></li> -->
+                            </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+
+    <main class="mt-2">
+        <div class="col-12 col-md-12 col-sm-12">
+            <div class="carousel slide" id="move" data-bs-theme="dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#move" data-bs-slide-to="0" class="active bg-white"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#move" data-bs-slide-to="1" aria-label="Slide 2"
+                        class="bg-white"></button>
+                    <button type="button" data-bs-target="#move" data-bs-slide-to="2" aria-label="Slide 3"
+                        class="bg-white"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="images/bannerfull.jpg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="images/banner3.jpeg" class="d-block w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="images/banner4.jpeg" class="d-block w-100" alt="">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#move" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#move" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </main> <br>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/eggs.jpeg" alt="Eggs" class="img-fluid imggap">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/neupass.jpeg" alt="Neupass" class="img-fluid imggap">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/aruveda.jpeg" alt="Aruveda" class="img-fluid imggap">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/buymore.jepg" alt="Buy More" class="img-fluid imggap">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/deals.jpeg" alt="Deals" class="img-fluid imggap">
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img src="images/combo.jpeg" alt="Combo" class="img-fluid imggap">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <h1 id="item1">Fruits</h1>
+            <h5 style="text-decoration: underline;" class="mb-4">Apples & Pomegrante</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/pomegranate.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Pomegranate</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 - 1/2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹109 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹143.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(13% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/apple2.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Apple - Washington</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 - 1/2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹154 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹189.05</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(10% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/apple.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Apple - New York</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 - 1/2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹180 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹220.16</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(11% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/apple3.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Apple - Royal Gala</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">2x4 pcs -
+                                (Multipack)</span>
+                        </div> <br>
+                        <span>₹110<strike style="color: rgb(126, 125, 125);" class="ms-2">₹123.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(6% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/greenapple.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Apple - Green</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">2x4 pcs -
+                                Multipack</span>
+                        </div> <br>
+                        <span>₹123 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹143.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(2% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/peeledpomegranate.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Pomegranate- loose</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">80g</span>
+                        </div> <br>
+                        <span>₹90 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹101.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(3% off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/shimlaapple.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Apple - Shimla</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">4pcs - (Appx.
+                                640g - 720g)</span>
+                        </div> <br>
+                        <span>₹135 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹162.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(7% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/babyapple.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Baby Apple Shimla</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 - 1/2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹109 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹143.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(4% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <h5 style="text-decoration: underline;" class="mb-4">Banana, Sapota & Papaya</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/papayaraw.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Papaya - Raw</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">800g</span>
+                        </div> <br>
+                        <span>₹33 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹45.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(6% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/bananayelakki.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Banana - Yelakki</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹139 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹213.7</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(15% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/bananarobusta.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Banana - Robust</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹48 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹65.75</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(8% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/papaya.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Papaya - Regular</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹48 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹65.75</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(4% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/sapota.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Sapota</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹138 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹189.04</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(9% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/bananared.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Banana - Red</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹99 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹202.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(16% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/papayasmall.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Papaya - Small</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1pc - (Appx. 500 t0 1 kg)</span>
+                        </div> <br>
+                        <span>₹56 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹76.71</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(7% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/babananendran.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Babana - (loose)</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 - 1/2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹109 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹143.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(6% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                           class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mb-4">Kiwi, Melon, Citrus Fruit</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/watermelonsmall.jepg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Watermelon - Small</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1pc - 1.7 - 2.5
+                                kg</span>
+                        </div> <br>
+                        <span>₹50 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹68.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(3% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/kiwigreen.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Kiwi - Green</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">3pcs - (Appx.
+                                220g - 260g)</span>
+                        </div> <br>
+                        <span>₹125 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹143.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(6% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/miniorangeimported.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Mini - Orange</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹302 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹413.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(12% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/peachinidian.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Peach - Indian</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">Approx 500g - 1
+                                Pack</span>
+                        </div> <br>
+                        <span>₹29 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹126.03</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(20% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/mosambieconomy.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Mosambi (Loose)</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">3 Kg</span>
+                        </div> <br>
+                        <span>₹128 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹175.18</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(13% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/muskmelon.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Muskmelon - Small</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 pc - 500g -
+                                600g</span>
+                        </div> <br>
+                        <span>₹30 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹41.1</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(4% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/mosambi.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Mosambi - (loose)</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">2
+                                Kg</span>
+                        </div> <br>
+                        <span>₹144 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹197.26</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(16% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Cherry.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Cherry</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">250 g</span>
+                        </div> <br>
+                        <span>₹175 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹239.9</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(18% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h1 id="item2">Vegetables</h1>
+            <h5 style="text-decoration: underline;" class="mt-2 mb-4">Brinjal & Beans</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/BeansHaircot.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Beans - Haircot</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">250 g</span>
+                        </div> <br>
+                        <span>₹19 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹35.62</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(8% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Brinjalbootleshape.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Brinjal - (loose)</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹78 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹145.21</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(17% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/BeansCowpea.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Beans - Cowpea</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹82 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹112.33</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(8% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Brinjalvarikatri.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Brinjal - Varikatri</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹94 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹134.25</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(12% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Beansbroad.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Beans - Broad </h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹110 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹150.68</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(7% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Beansdiced.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Beans - Diced</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">200 g</span>
+                        </div> <br>
+                        <span>₹32.12 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹44</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(4% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/beansfrench.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Beans - French</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹110 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹200</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(17% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/brinjalround.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Brinjal - Round</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹110 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹150.68</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(10% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mt-2 mb-4">Cabbage & Cauliflower</h5>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Cauliflower.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Cauliflower</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1pc - (Approx.
+                                400g - 500g)</span>
+                        </div> <br>
+                        <span>₹32.12 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹44</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(3% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/cabbage.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Cabbage</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1pc - (Approx.
+                                450g - 700g)</span>
+                        </div> <br>
+                        <span>₹32 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹61.64</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(10% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/cutcauliflower.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Cut Cauliflower</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">300 g</span>
+                        </div> <br>
+                        <span>₹46.72 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹64</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(8% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Redcabbage-medium.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Red Cabbage</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1pc - (Approx.
+                                601g - 950g)</span>
+                        </div> <br>
+                        <span>₹104 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹142.27</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(9% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mt-2 mb-4">Potato, Onion & Tomato</h5>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/potato.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Potato</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹45 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹61.64</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(6% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Onion.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Onion</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹62 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹71.23</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(8% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/tomatohybrid.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Tomato - Hybrid</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">500 g</span>
+                        </div> <br>
+                        <span>₹16.5 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹23.97</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(4% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/babypotato.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Baby Potato</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1 Kg</span>
+                        </div> <br>
+                        <span>₹64 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹87.67</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;">(12% Off)</span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container mt-3">
+        <h1>Top Offers</h1>
+        <div class="row mt-3">
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card custom-shadow">
+                    <a href="#"><img src="images/offers1.jpeg" class="card-img-top" alt="Offer 1"></a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card custom-shadow">
+                    <a href="#"><img src="images/offers2.jpeg" class="card-img-top" alt="Offer 2"></a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card custom-shadow">
+                    <a href="#"><img src="images/offers3.jpeg" class="card-img-top" alt="Offer 3"></a>
+                </div>
+            </div>
+            <div class="col-6 col-sm-6 col-md-4 col-lg-3 mb-4">
+                <div class="card custom-shadow">
+                    <a href="#"><img src="images/offers4.jpeg" class="card-img-top" alt="Offer 4"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+ <div class="container mt-3">
+        <div class="row">
+            <h1 id="item3">Bakery, Cakes & Dairy</h1>
+            <h5 style="text-decoration: underline;" class="mb-4">Bakery Snacks</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Masalacheesestrawsspicedtwisted.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Fresho !</span>
+                        <h5 class="card-title">Masala Cheese</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">200 g</span>
+                        </div> <br>
+                        <span>₹109 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Mexicanchillitomatocrackers.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Mexican </span>
+                        <h5 class="card-title">Chilli crackers</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">100 g</span>
+                        </div> <br>
+                        <span>₹162 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/jowarpuffstiffinsnackhighinfibre.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">High in Fibre</span>
+                        <h5 class="card-title">Jowar Puffs </h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">50 g</span>
+                        </div> <br>
+                        <span>₹180 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/BeetrootCrackersWholewheat.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Whole Wheat !</span>
+                        <h5 class="card-title">Beetroot Crackers</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">100 g</span>
+                        </div> <br>
+                        <span>₹109 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mb-4">Bakery Buns</h5>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/MultigrainBread.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">Multigrain Bread</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">400 g</span>
+                        </div> <br>
+                        <span>₹39 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹60</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/WholeWheatBread.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">MODERN</span>
+                        <h5 class="card-title">Whole Wheat Bread</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">400 g</span>
+                        </div> <br>
+                        <span>₹50 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/BrownBread.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties!</span>
+                        <h5 class="card-title">Brown Bread</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">400 g</span>
+                        </div> <br>
+                        <span>₹39 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹50</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/SandwichBread.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">Sandwich Bread</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">400 g</span>
+                        </div> <br>
+                        <span>₹47 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹55</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mt-2 mb-4">Cakes & Pastries</h5>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/TeaCakeBlueberrycrumble.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">Tea Cake - Blueberry</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">250 g</span>
+                        </div> <br>
+                        <span>₹235 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/GobblesFruityFunCake.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">Gobbles Fruity Fun Cake</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">2x100 g -
+                                Multipack</span>
+                        </div> <br>
+                        <span>₹51.3 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹60</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/MuffinsCupCake.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">Muffins Cup Cake</h5> <br> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">400 g</span>
+                        </div> <br>
+                        <span>₹47 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹55</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/EnglishTeaCake.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Tasties</span>
+                        <h5 class="card-title">English Tea Cake</h5> <br><br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">250 g</span>
+                        </div> <br>
+                        <span>₹150 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <h5 style="text-decoration: underline;" class="mt-2 mb-4">Ice Creams & Desserts</h5>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/FrenchVanillaIceCream.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Milky Mist</span>
+                        <h5 class="card-title">French Vanilla Ice Cream</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1L - Tub</span>
+                        </div> <br>
+                        <span>₹200 <strike style="color: rgb(126, 125, 125);" class="ms-2">₹250</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/Vanilla Magic.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Amul</span>
+                        <h5 class="card-title">Vanilla Magic</h5> <br><br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">2x1 L -
+                                Multipack</span>
+                        </div> <br>
+                        <span>₹390 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/RajbhobIceCream.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Amul</span>
+                        <h5 class="card-title">Rajbhob Ice Cream</h5> <br><br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">1L - Tub</span>
+                        </div> <br>
+                        <span>₹235 <strike style="color: rgb(126, 125, 125);" class="ms-2"></strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="card mb-4">
+                    <img src="images/KesarPistaKulfiStick.jpeg" class="card-img-top" alt="Card Image">
+                    <div class="card-body">
+                        <span style="color: rgb(86, 86, 86);">Amul</span>
+                        <h5 class="card-title">Kesar Pista Kulfi Stick</h5> <br>
+                        <div class="card" style="color: rgb(126, 125, 125);background-color: rgb(236, 233, 233);">
+                            <span class="px-2" style="font-size: smaller; font-weight: 600;">4x70 ml -
+                                Multipack</span>
+                        </div> <br>
+                        <span>₹247.3 <strike style="color: rgb(126, 125, 125);" class="ms-2">280</strike></span><span
+                            class="ms-2" style="color: green; font-weight: 600;"></span> <br> <br>
+                        <button
+                            style="border: 1px solid black; width: 36px; height: 36px; border-radius: 5px;background-color: white;"
+                            class="me-0" id="button"><span><abbr title="Save For Later"><img src="images/bookmark.png"
+                                        alt="" style="width: 20px; height: 27px; cursor: pointer;"
+                                        class="pb-1 pt-1"></abbr></span></button>
+                        <a href="#" class="btn btn-danger w-75 ms-1">Add</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+ </div>
+ 
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Our Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Order Status</a></li>
+                    <li><a href="#">Payment options</a></li>
+                    <li><a href="customerreview.html">Customer Review</a></li>
+                    <li><a href="feedbackform.html">Feeback form</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Online Shop</h4>
+                <ul>
+                    <li><a href="#">Fruits</a></li>
+                    <li><a href="#">Vegetables</a></li>
+                    <li><a href="#">Bakery</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="copyright">
+                    <p><center>&copy; 2024 Big Basket. All rights reserved.</center></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+   
+
+
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
