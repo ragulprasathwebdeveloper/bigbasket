@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .customer-card {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid rgb(160, 153, 153);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+        }
+
+        .customer-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            background-color: #f8f9fa;
+        }
+
+        .customer-card img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            transition: transform 0.3s;
+            display: block;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .customer-card .customer-details {
+            padding-top: 10px;
+            text-align: center; /* Center the text */
+        }
+
+        .customer-card .customer-details h5 {
+            margin: 0 0 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .customer-card .customer-details p {
+            margin: 0;
+            color: #666;
+        }
+
+        .customer-card .customer-details .review {
+            margin-top: 10px;
+        }
+
+        h2 {
+            margin: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Customer Reviews</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>John Doe</h5>
+                        <p>Regular Customer</p>
+                        <p class="review">"Always fresh and high-quality fruits. The delivery is quick and efficient. Highly recommend Big Basket!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>Jane Smith</h5>
+                        <p>Frequent Buyer</p>
+                        <p class="review">"The best place to get organic vegetables. Excellent service and great prices!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>Johnson</h5>
+                        <p>New Customer</p>
+                        <p class="review">"Impressed with the variety and quality of products. Will definitely shop again!"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>James Wilson</h5>
+                        <p>Happy Customer</p>
+                        <p class="review">"The bakery section is amazing! Fresh bread and pastries delivered to my door."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>Linda Brown</h5>
+                        <p>Returning Customer</p>
+                        <p class="review">"Reliable service and high-quality products. My go-to online grocery store."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="customer-card">
+                    <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Customer Image">
+                    <div class="customer-details">
+                        <h5>Michael Green</h5>
+                        <p>Verified Buyer</p>
+                        <p class="review">"Great discounts and fast delivery. The app is easy to use and convenient."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
